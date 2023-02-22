@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import SearchBar from './components/SearchBar';
 import SkillsList from './components/SkillsList';
 import PopularCat from './components/PopularCat';
+import AddedSkillArea from './components/AddedSkillArea';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Container>
         <SearchBar />
+        <AddedSkillArea/>
         <SkillsList />
         <PopularCat />
       </Container>
