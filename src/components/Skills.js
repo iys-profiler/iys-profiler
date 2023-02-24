@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Expertisepopover from './popovers/Expertisepopover';
 import MyPopover from './popovers/MyPopover';
-import Popup from './popovers/Popup';
+import DetailSkillPopup from './popovers/DetailSkillPopup';
 
 
 
@@ -14,8 +14,8 @@ import Popup from './popovers/Popup';
 function Skills(props) {
     return (
         <>
-            <OverlayTrigger trigger={['click']} placement="auto" overlay={Expertisepopover} rootClose={true}>
-                <Button variant="light">Click me to see</Button>
+            <OverlayTrigger trigger={['hover',"focus"]} placement="auto" overlay={DetailSkillPopup(props)} rootClose={true}>
+                <Button variant="light" >{props.name}</Button>
             </OverlayTrigger>
         </>
     );
