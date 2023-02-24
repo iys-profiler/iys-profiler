@@ -13,8 +13,6 @@ function AddedSkillArea() {
       </Badge>< span className="text-muted" >Skills Added to your Profile</span>
         <div className='mt-3'>
           <SkillsAdded  name="My Component" />
-          <SkillsAdded  name="My ds" />
-          <SkillsAdded   name="My Component"/>
           </div>
         <hr />
         </span>

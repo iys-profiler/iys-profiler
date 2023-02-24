@@ -26,7 +26,7 @@ function PopularCat() {
                     <hr></hr>
                     {categories.map(category => (
                         // <span>{categories._key}</span>
-                        <Skills key={categories._key} name={category.name} />
+                        <Skills key={category._key} name={category.name} />
                     ))}
                     <hr />
 

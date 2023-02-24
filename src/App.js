@@ -15,7 +15,6 @@ function App() {
       <Container>
         <SearchBar />
         <AddedSkillArea/>
-        <SkillsList />
         <PopularCat />
       </Container>
     </>
