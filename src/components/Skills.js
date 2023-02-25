@@ -12,10 +12,14 @@ import DetailSkillPopup from './popovers/DetailSkillPopup';
 
 
 function Skills(props) {
+    const handleButtonClick = () => {
+        // props.setSearchValue(props.name)
+      }
+    
     return (
         <>
             <OverlayTrigger trigger={['hover',"focus"]} placement="auto" overlay={DetailSkillPopup(props)} rootClose={true}>
-                <Button variant="light" >{props.name}</Button>
+                <Button variant="light" onClick={handleButtonClick}>{props.name}</Button>
             </OverlayTrigger>
         </>
     );

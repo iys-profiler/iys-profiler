@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Skills from './Skills';
 
-function SkillsList(props) {
+function SkillTree(props) {
     return (
         <>
         <div className='mt-3'>
-        {props.searchSkillList.map(category => (
+        {props.files_by_name.map(category => (
                         // <span>{categories._key}</span>
                         // console.log(category)""
                         <Skills key={category._key} name={category.skill.name}  setSearchValue={props.setSearchValue} />
@@ -16,4 +16,4 @@ function SkillsList(props) {
     );
 }
 
-export default SkillsList;
+export default SkillTree;
