@@ -8,6 +8,11 @@ export function searchSkills(searchQuery){
     return ApiClient.get('/ISOT/?q='+searchQuery);
 }
 
-export function addProduct(data){
-    return ApiClient.post('/product', JSON.stringify(data));
+export function childrenSkills(searchQuery){
+    return ApiClient.get('/ISOT/children/?id=',searchQuery);
+}
+
+export function treeSkills(file_id){
+    console.log("file_is",file_id)
+    return ApiClient.get('/ISOT/tree/?id='+file_id);
 }

@@ -1,7 +1,8 @@
 import Card from 'react-bootstrap/Card';
 import { getPopularCategories } from './api/ApiCalls';
-import Skills from './Skills';
+
 import React, { useState, useEffect } from 'react'
+import BasicSkills from './subcomponents/BasicSkills';
 
 // return the list and iterate it through the card title
 function PopularCat() {
@@ -26,7 +27,7 @@ function PopularCat() {
                     <hr></hr>
                     {categories.map(category => (
                         // <span>{categories._key}</span>
-                        <Skills key={category._key} name={category.name} />
+                        <BasicSkills key={category._key} skill={category} />
                     ))}
                     <hr />
 

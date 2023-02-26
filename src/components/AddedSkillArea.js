@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button';
-import Skills from './Skills';
+import Skills from './subcomponents/Skills';
 import Badge from 'react-bootstrap/Badge';
 import SkillsAdded from './SkillsAdded';
 
