@@ -1,9 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Skills from './Skills';
 import Card from 'react-bootstrap/Card';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-import React, { useContext } from 'react';
+import React, { useContext,useEffect } from 'react';
 import GlobalContext from '../../GlobalState';
 import SkillSubTree from './SkillSubTree';
 
@@ -13,7 +12,23 @@ import SkillSubTree from './SkillSubTree';
 
 function SearchAddedTree(props) {
     const { globalVariable, setGlobalVariable } = useContext(GlobalContext);
-    console.log("gobal vaibale",globalVariable)
+    console.log("gobal vaibale", globalVariable)
+
+    useEffect(() => {
+        console.log('Global variable has changed:', globalVariable?.skill?.name);
+        console.log('Global variable has changed:', globalVariable?.files);
+        console.log('FILSE:', globalVariable?.file);
+    }, [globalVariable]);
+
+
+    const renderSkillSubTree = () => {
+        if (globalVariable?.file) {
+          return  <SkillSubTree key={globalVariable?.file._key} skill_files={globalVariable?.file} />
+        } else {
+          return null;
+        }
+      }
+
     return (
         <>
             <div className='mt-3'>
@@ -23,18 +38,19 @@ function SearchAddedTree(props) {
                             Selected Skills
                         </span></Card.Title>
                         {globalVariable?.files?.map(skill_files => (
-                        // <span>{categories._key}</span>
-                        <SkillSubTree key={skill_files._key} skill_files={skill_files} />
-                        
-                        // console.log("skill_files",skill_files)
-                        // <BasicSkills key={category._key} skill={category} />
-                    ))}
-      
+                            <SkillSubTree key={skill_files._key} skill_files={skill_files} />
+                        ))
+                        }
+                        {renderSkillSubTree()}
+
+                       
+
                         <hr />
                         <p></p>
 
                     </Card.Body>
                 </Card>
+                
             </div>
         </>
     );

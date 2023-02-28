@@ -2,20 +2,33 @@
 import './App.css';
 
 import Header from './components/Header';
-import Container from 'react-bootstrap/Container';
-import SearchBar from './components/SearchBar';
-import PopularCat from './components/PopularCat';
-import SearchAddedTree from './components/subcomponents/SearchAddedTree';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import SerachApiCop from './components/maincomponents/SerachApiCop';
+import SkillCatApi from './components/maincomponents/SkillCatApi';
+import SkillPopCatApi from './components/maincomponents/SkillPopCatApi';
+
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Container>
-        <SearchBar />
-        <SearchAddedTree />
-        <PopularCat />
-      </Container>
-    </>
+      <Switch>
+          <Route path="/popular-category">
+            <SkillPopCatApi />
+          </Route>
+          <Route path="/category">
+            <SkillCatApi />
+          </Route>
+          <Route path="/">
+            <SerachApiCop />
+          </Route>
+        </Switch>
+
+    </Router >
   );
 }
 

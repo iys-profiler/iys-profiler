@@ -15,8 +15,7 @@ import React, { useContext } from 'react';
 function Skills(props) {
     const { globalVariable, setGlobalVariable } = useContext(GlobalContext);
     const handleButtonClick = () => {
-        console.log("added skiil", props.skill)
-        console.log("added skiil", props.skillDetail.skill.name)
+        console.log("skill cliked",props.skillDetail)
         setGlobalVariable(props.skillDetail)
     }
 
