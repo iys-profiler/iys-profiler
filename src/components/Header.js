@@ -22,9 +22,9 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-            <Nav.Link href='iys-profile/'>Search</Nav.Link>
-            <Nav.Link  href='iys-profile/category'>Category</Nav.Link>
-            <Nav.Link href='iys-profile/popular-category'>Popular Categories</Nav.Link>
+            <Nav.Link href='/iys-profile/'>Search</Nav.Link>
+            <Nav.Link  href='/iys-profile/category'>Category</Nav.Link>
+            <Nav.Link href='/iys-profile/popular-category'>Popular Categories</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
