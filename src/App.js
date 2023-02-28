@@ -12,18 +12,20 @@ import SerachApiCop from './components/maincomponents/SerachApiCop';
 import SkillCatApi from './components/maincomponents/SkillCatApi';
 import SkillPopCatApi from './components/maincomponents/SkillPopCatApi';
 
+
+
 function App() {
   return (
     <Router>
       <Header />
       <Switch>
-          <Route path="/popular-category">
+          <Route path="/iys-profile/popular-category">
             <SkillPopCatApi />
           </Route>
-          <Route path="/category">
+          <Route path="/iys-profile/category">
             <SkillCatApi />
           </Route>
-          <Route path="/">
+          <Route path="/iys-profile/">
             <SerachApiCop />
           </Route>
         </Switch>
