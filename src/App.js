@@ -19,13 +19,13 @@ function App() {
     <Router>
       <Header />
       <Switch>
-          <Route path="/iys-profile/popular-category">
+          <Route path="/popular-category">
             <SkillPopCatApi />
           </Route>
-          <Route path="/iys-profile/category">
+          <Route path="/category">
             <SkillCatApi />
           </Route>
-          <Route path="/iys-profile/">
+          <Route path="/">
             <SerachApiCop />
           </Route>
         </Switch>
