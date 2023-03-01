@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.12bcdcec.js",
-    "static/js/787.cb2c0682.chunk.js": "/static/js/787.cb2c0682.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.12bcdcec.js.map": "/static/js/main.12bcdcec.js.map",
-    "787.cb2c0682.chunk.js.map": "/static/js/787.cb2c0682.chunk.js.map"
+    "main.css": "/Om-Abhishek/iys-profiler/static/css/main.073c9b0a.css",
+    "main.js": "/Om-Abhishek/iys-profiler/static/js/main.946e29ad.js",
+    "static/js/787.cb2c0682.chunk.js": "/Om-Abhishek/iys-profiler/static/js/787.cb2c0682.chunk.js",
+    "index.html": "/Om-Abhishek/iys-profiler/index.html",
+    "main.073c9b0a.css.map": "/Om-Abhishek/iys-profiler/static/css/main.073c9b0a.css.map",
+    "main.946e29ad.js.map": "/Om-Abhishek/iys-profiler/static/js/main.946e29ad.js.map",
+    "787.cb2c0682.chunk.js.map": "/Om-Abhishek/iys-profiler/static/js/787.cb2c0682.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.12bcdcec.js"
+    "static/js/main.946e29ad.js"
   ]
 }
